@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" 
+		  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<link rel="stylesheet" href="css/animate.css">
+	<title>老婆，七夕快乐</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+		}
+		body,html{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+		ul{
+			list-style: none;
+		}
+		img{
+			display: block;
+		}
+		p.music-btn{
+			position: fixed;
+			z-index: 10;
+			left: 10px;
+   			top: 1rem;
+			width: 44px;
+			height: 44px;
+			background: url(images/music.png) no-repeat;
+		}
+		p.arrow{
+			position: fixed;
+			z-index: 10;
+			/*left: 30%;*/
+			bottom: 0;
+			width: 86px;
+			height: 66px;
+			background: url(images/arrow.png) no-repeat;
+			/*animation: arrow 1s linear infinite;*/
+		}
+		.page{
+			position: absolute;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+		.page1{
+			background:url(images/page1-bg.jpg) no-repeat;
+			background-position: -93px;
+			background-size: 160% 100%;
+			background-clip: padding-box;
+
+			padding-top: 2rem;
+		}
+		.photo{
+			display: block;
+			width: 40%;
+			margin: 0 auto;
+			border-radius: 50%;
+			box-shadow: 0 0 8px 8px #e2cb88;
+			-webkit-box-shadow: 0 0 8px 8px #e2cb88;
+			opacity: 1;
+		}
+		.info{
+			text-align: center;
+			font-size: 1.4rem;
+			font-family: '华文新楷';
+		}
+		.info li{
+			margin-top: 1rem;
+			text-shadow: 0 0 10px #ca4545;
+			-webkit-text-shadow: 0 0 10px #ca4545;
+			text-shadow: 0 0 20px #ca4545;
+			-webkit-text-shadow: 0 0 20px #ca4545;
+		}
+		.info li{
+			-webkit-animation-fill-mode: both;
+		}
+		.info li span:first-child{
+			text-align: left;
+			color: #f183ee;
+			font-weight: bolder;
+		}
+		.info li span:last-child{
+			text-align: center;
+			color: #6cecb1;
+			font-weight: bold;
+
+		}
+		.page2{
+			background:url(images/page2-bg.jpg) no-repeat;
+			background-size: 186% 100%;
+			background-clip: padding-box;
+
+		}
+		.page2 h1{
+			margin-left: 30%;
+		    font-size: 1.5rem;
+		    font-family: '宋体';
+		    padding-top: 4rem;
+			text-shadow: 0 0 20px #0e0a08;
+			-webkit-text-shadow: 0 0 20px #0e0a08;
+			text-shadow: 0 0 20px #0e0a08;
+			color: #a25656;
+			transform: translateY(-500px);
+			-webkit-transform: translateY(-500px);
+			animation-fill-mode: both;
+
+			-webkit-animation-fill-mode: both;
+
+		}
+		.page2 h2{
+			margin-left: 30%;
+		    font-size: 1.3rem;
+		    font-family: '宋体';
+		    padding-top: 2rem;
+		    padding-bottom: 1rem;
+			text-shadow: 0 0 20px #5a361d;
+			-webkit-text-shadow: 0 0 20px #5a361d;
+			text-shadow: 0 0 20px #a9541a;
+			color: #389ab9;
+			transform: translateY(-500px);
+			-webkit-transform: translateY(-500px);
+			animation-fill-mode: both;
+			-webkit-animation-fill-mode: both;
+		}
+		.want{
+			margin-left: 25%;
+		}
+		.want li{
+			line-height: 2rem;
+			font-size: 1.2rem;
+			font-family: Impact, Charcoal, sans-serif;
+		}
+		.want li:nth-child(odd){
+			margin-left: 10%;
+			color: #415f2a;
+			transform: translateX(-80px);opacity: 0;
+			-webkit-transform: translateX(-80px);opacity: 0;
+			animation-fill-mode: both;
+			-webkit-animation-fill-mode: both;
+			    font-weight: bold;
+		}
+		.want li:nth-child(even){
+			margin-left: 20%;
+			color: #273f75;
+			transform: translateX(80px);opacity: 0;
+			animation-fill-mode: both;
+			-webkit-transform: translateX(80px);opacity: 0;
+			-webkit-animation-fill-mode: both;
+			    font-weight: bold;
+		}
+		.page3{
+			background:url(images/page3-bg.jpg) no-repeat;
+			background-size: 160% 100%;
+			background-clip: padding-box;
+			background-position: -170px;
+		}
+		.page3 .want{
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		.page3 .want li{
+			margin-left: 0%;
+			text-align: center;
+			margin-top: 1rem;
+		}
+		.page3 .want li span{
+			font-size: 1.4rem;
+		}
+		.page{
+			transition: transform .5s linear;
+			transition: -webkit-transform .5s linear;
+		}
+		/*.page:nth-child(4){
+			display: block;
+		}*/
+		.pageUp{
+			transform: translateY(-100%);
+			-webkit-transform: translateY(-100%);
+		}
+		.pageDown{
+			transform: translateY(100%);
+			-webkit-transform: translateY(100%);
+		}
+		.hide{
+			display: none;
+		}
+		.jia{
+			width: 100%;
+
+		}
+		.jia img{
+			width: 100%;border-radius: 20px
+		}
+	</style>
+</head>
+<body>
+	<audio id="audio" src="source/韩安旭 - 多幸运.mp3" autoplay="autoplay" loop="loop"></audio>
+	<p class="music-btn animated music infiniteAni"></p>
+	<p class="arrow animated infiniteAni arrowUp"></p>
+	<div class="main">
+		<div class="page page1">
+			<img class="photo animated slideDown box" src="images/photo.jpg" alt="">
+			<ul class="info box">
+				<li class="animated fadeInLeft delay1"><span>亲爱的 </span><span>我的梅梅</span></li>
+				<li class="animated fadeInLeft delay2"><span>在这个七七夕 </span><span>我不能陪你</span></li>
+				<li class="animated fadeInLeft delay3"><span>但是我在城市的 </span><span>这一头等你</span></li>
+				<li class="animated fadeInLeft delay4"><span>在这些没有你的日子</span><span>我过的不开心</span></li>
+				<li class="animated fadeInLeft delay5"><span>没有你的陪伴</span><span>夜不能昧</span></li>
+				<li class="animated fadeInLeft delay6"><span>今天 </span><span>七夕快乐</span></li>
+			</ul>
+		</div>
+		<div class="page page2 pageDown">
+			<h1 class="animated slideDownH box hide">好想你</h1>
+			<h2 class="animated slideDownH box hide">想你的夜</h2>
+			<ul class="want hide box">
+				<li class="animated fadeInLeft delay1"><span>想你的夜</span></li>
+				<li class="animated fadeInRight delay2"><span>多希望你能在我身边</span></li>
+				<li class="animated fadeInLeft delay3"><span>没有你的日子</span></li>
+				<li class="animated fadeInRight delay4"><span>我真的好孤单</span></li>
+				<li class="animated fadeInLeft delay5"><span>爱上你</span></li>
+				<li class="animated fadeInRight delay6"><span>是我今生最对的决定</span></li>
+			</ul>
+		</div>
+		<div class="page page3 pageDown">
+			<ul class="want hide box">
+				<li class="animated fadeInLeft delay1"><span class="jia"><img src="images/2.jpg" alt=""></span></li>
+				<li class="animated fadeInLeft delay6"><span id="me">宝贝，嫁给我！</span></li>
+				<li class="animated fadeInRight delay3"><span class="jia"><img src="images/1.jpg" alt=""></span></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch-0.2.14.min.js"></script><!-- 百度touch插件 -->
+	<!-- <script src="js/jquery.js"></script> -->
+	<script src='js/index.js'></script>
+	<script>
+	var btn = document.getElementById('me');
+		setInterval(change,200);
+			function change(){
+				var r = Math.ceil(Math.random()*255);
+				var g = Math.ceil(Math.random()*255);
+				var b = Math.ceil(Math.random()*255);
+				btn.style.color='rgb('+r+','+g+','+b+')';
+			}
+	</script>
+</body>
+</html>

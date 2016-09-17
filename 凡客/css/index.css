@@ -1,0 +1,336 @@
+
+	/*页面初始化开始*/
+		body,html,ul,li{
+			padding: 0;
+			margin: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+	/*页面初始化结束*/
+	html{
+        width: 100%;
+        height: 100%;
+    }
+    body {
+    	position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 50rem;
+        color:#f00;
+    }
+    .swiper-container {
+    	position: absolute;
+    	overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: .3rem;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .page1,.page2,.page3,.page4,.page5,.page6{
+    	position: relative;
+    	width: 100%;
+    	height: 100%;
+    	overflow: hidden;
+    }
+    .page1{
+		background-color: #0e2b4c;
+    }
+    .page1-1{
+    	position: absolute;
+		width: 100%;
+		height: 1.3rem;
+		left: 0;
+		top: 1.33rem;
+    	background: url(../images/page1-img1.png) no-repeat;
+		-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+    }
+    .page1-2{
+    	position: absolute;
+		width: 100%;
+		height: 1rem;
+		left: 0;
+		top: 5.36rem;
+    	background: url(../images/page1-img2.png) no-repeat;
+		-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+    }
+    .page2{
+    	background-color: #fff;
+    }
+    .page2-1{
+    	position: absolute;
+    	left: 0;
+    	top: .4rem;
+    	width: 100%;
+    	height: 1.4rem;
+    	background:url(../images/page2-img1.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+    }
+    .page2-2{
+    	position: absolute;
+    	left: 0;
+    	top: 2.17rem;
+    	width: 100%;
+    	height: 3.7rem;
+    	background: url(../images/page2-img2.png) no-repeat;
+    	-webkit-background-size: 100%;
+    	background-size: 100% 100%;
+    }
+    .page2-3{
+    	position: absolute;
+    	left: 0;
+    	top: 6.14rem;
+    	width: 100%;
+    	height: 1.4rem;
+    	background:url(../images/page2-img3.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+    }
+    .page3{
+    	background-color: #0d2b4c;
+    }
+   .page3-1{
+   		position: absolute;
+    	left: 0;
+    	top: 2.32rem;
+    	width: 100%;
+    	height: 1.8rem;
+    	background:url(../images/page3-img1.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+    	z-index: 10;
+   }
+   .page3-2{
+   		position: absolute;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: 6.87rem;
+    	background:url(../images/page3-img2.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+    	z-index: 9;
+
+   }
+   .page3-3{
+   		position: absolute;
+    	left: 0;
+    	top: 7.5rem;
+    	width: 100%;
+    	height: .7rem;
+    	background:url(../images/page3-img3.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+    	z-index: 10;
+   }
+	.page4{
+		background-color: #fff;
+	}
+	.page4-1{
+		position: absolute;
+    	left: .16rem;
+    	top: 0.15rem;
+    	width: 1.99rem;
+    	height: 4.66rem;
+    	background:url(../images/page4-img1.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page4-2{
+		position: absolute;
+    	left: 2.23rem;
+        top: 0.15rem;
+        width: 1.95rem;
+        height: 4.66rem;
+    	background:url(../images/page4-img2.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page4-3{
+		position: absolute;
+    	right: .15rem;
+    	top: 0.15rem;
+    	width: 1.99rem;
+        height: 4.66rem;
+    	background:url(../images/page4-img3.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page4-4{
+		position: absolute;
+    	left: 0;
+    	top: 5.33rem;
+    	width: 100%;
+    	height: 1rem;
+    	background:url(../images/page4-img4.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page4-5{
+		position: absolute;
+    	left: 0;
+    	top: 6.39rem;
+    	width: 100%;
+    	height: .4rem;
+    	background:url(../images/page4-img5.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page5,.page6{
+		background-color: #fff;
+	}
+	.page5-1{
+		position: absolute;
+    	left: .16rem;
+    	top: .13rem;
+    	width: 6.12rem;
+    	height: 4.61rem;
+    	background:url(../images/page5-img1.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page5-2{
+		position: absolute;
+    	left: 0;
+    	top: 5.3rem;
+    	width: 100%;
+    	height: .26rem;
+    	background:url(../images/page5-img2.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page5-3{
+		position: absolute;
+    	left: 0;
+    	top: 5.7rem;
+    	width: 100%;
+    	height: .26rem;
+    	background:url(../images/page5-img3.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page5-4{
+		position: absolute;
+    	left: 0;
+    	top: 6.04rem;
+    	width: 100%;
+    	height: .26rem;
+    	background:url(../images/page5-img4.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page5-5{
+		position: absolute;
+    	left: 0;
+    	top: 6.44rem;
+    	width: 100%;
+    	height: .26rem;
+    	background:url(../images/page5-img5.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page5-6{
+		position: absolute;
+    	left: 0;
+    	top: 6.88rem;
+    	width: 100%;
+    	height: .26rem;
+    	background:url(../images/page5-img6.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page6-1{
+		position: absolute;
+    	left: .16rem;
+    	top: .13rem;
+    	width: 6.11rem;
+    	height: 3.42rem;
+    	background:url(../images/page6-img1.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page6-2{
+		position: absolute;
+    	left: .16rem;
+    	top: .75rem;
+    	width: 2.96rem;
+    	height: 3.96rem;
+    	background:url(../images/page6-img2.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page6-3{
+		position: absolute;
+    	right: .15rem;
+    	top: 1.69rem;
+    	width: 4.71rem;
+    	height: 3.02rem;
+    	background:url(../images/page6-img3.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page6-4{
+		position: absolute;
+    	left: .16rem;
+    	top: 5.04rem;
+    	width: 100%;
+    	height: 1rem;
+    	background:url(../images/page6-img4.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page6-5{
+		position: absolute;
+    	left: .16rem;
+    	top: 6.13rem;
+    	width:100%;
+    	height: .3rem;
+    	background:url(../images/page6-img5.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page6-6{
+		position: absolute;
+    	left: .16rem;
+    	top: 6.52rem;
+    	width: 100%;
+    	height: .3rem;
+    	background:url(../images/page6-img6.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
+	.page6-7{
+		position: absolute;
+    	right: .1rem;
+    	top: .13rem;
+    	width: .62rem;
+    	height: .67rem;
+    	background:url(../images/page6-img7.png) no-repeat;
+    	-webkit-background-size: 100% 100%;
+    	background-size: 100% 100%;
+	}
